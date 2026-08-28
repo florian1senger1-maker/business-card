@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{{ name }} — Business Card</title>
+<link rel="stylesheet" href="card.css">
+</head>
+<body>
+
+<div class="card">
+
+  <div class="accent-line"></div>
+
+  <div class="main">
+    <div class="name">{{ name }}</div>
+    <div class="title">{{ title }}</div>
+
+    <div class="small-line"></div>
+
+    <div class="focus">{{ focus }}</div>
+    <div class="tagline">{{ tagline }}</div>
+
+    <div class="contact">
+      <div class="contact-row">
+        <div class="icon">@</div>
+        <a href="mailto:{{ email }}">{{ email }}</a>
+      </div>
+
+      <div class="contact-row">
+        <div class="icon">T</div>
+        <a href="tel:{{ phone_tel }}">{{ phone }}</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="background-wave"></div>
+
+  <div class="link-band">
+
+    <a class="link-box" href="{{ linkedin_url }}">
+      <div class="link-icon">in</div>
+      <div>
+        <div class="link-title">{{ linkedin_label }}</div>
+        <div class="link-text">{{ linkedin_text }}</div>
+      </div>
+    </a>
+
+    <div class="divider"></div>
+
+    <a class="link-box framework" href="{{ framework_url }}">
+      <div class="link-icon doc">≡</div>
+      <div>
+        <div class="link-title">{{ framework_label }}</div>
+        <div class="link-text">{{ framework_text }}</div>
+      </div>
+    </a>
+
+  </div>
+
+  <div class="quote">“ {{ quote }}</div>
+
+</div>
+
+</body>
+</html>
