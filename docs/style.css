@@ -205,3 +205,21 @@ body {
     margin-top: 24px;
   }
 }
+
+@media (max-width: 580px) {
+  .card {
+    min-height: auto;
+  }
+
+  .page {
+    min-height: auto;
+  }
+
+  body {
+    min-height: auto;
+  }
+
+  .content {
+    padding-bottom: 36px;
+  }
+}
